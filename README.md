@@ -57,7 +57,8 @@ Three baseline models were trained to establish a starting point:
 | k-NN (k=5)      | 87.25       |
 | SVM (Linear)    | 89.88       |
 
-- **k-NN and SVM performed well**, but Decision Tree had low accuracy.
+- **k-NN and SVM performed well**, but Decision Tree had low accuracy.<br>
+**MATLAB Script**: `train_models.m`
 
 ---
 
@@ -97,7 +98,7 @@ These metrics provided additional insights into per-class performance, helping a
 ### **1.Clone the Repository:**
 ```bash
 # Clone the repository
-https://github.com/yourusername/smartphone-activity-recognition.git
+https://github.com/Pratham-mehta/human-activity-recognition-matlab.git
 cd smartphone-activity-recognition
 ```
 
@@ -106,23 +107,25 @@ cd smartphone-activity-recognition
 - Upload the dataset and scripts
 
 ### **3.Run the Scripts in Order:**
-1. **Prepare the Data:** `prepare_data.m`
-2. **Train Initial Models:** `train_models.m`
-3. **Hyperparameter Tuning:** `tune_knn.m`, `tune_svm.m`
-4. **Feature Selection:** `compute_feature_importance.m`, `select_features.m`
-5. **Train Final Model:** `train_models_selected.m`
-6. **Evaluate Final Model:** `evaluate_final_svm.m`
+1. **Visualize Data:** `visualize_data.m`
+2. **Prepare the Data:** `prepare_data.m`
+3. **Train Initial Models:** `train_models.m`
+4. **Hyperparameter Tuning:** `tune_knn.m`, `tune_svm.m`
+5. **Feature Selection:** `compute_feature_importance.m`, `select_features.m`, `rfe_feature_selection.m`
+6. **Train Final Model:** `train_models_selected.m`
+7. **Evaluate Final Model:** `evaluate_final_svm.m`
 
 ---
 
 ## GitHub Repository Structure
 ```
-smartphone-activity-recognition/
+human-activity-recognition-matlab/
 │── dataset/                     # Raw dataset
 │   ├── Train/
 │   ├── Test/
 │   ├── features.txt
-│── prepare_data.m                # Data preprocessing script
+│── visualize_data.m               # Data visualization script
+│── prepare_data.m                 # Data preprocessing script
 │── train_models.m                 # Initial model training
 │── tune_knn.m                     # k-NN Hyperparameter tuning
 │── tune_svm.m                     # SVM Hyperparameter tuning
