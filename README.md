@@ -38,7 +38,7 @@ Human activity recognition (HAR) has applications in **healthcare monitoring, fi
 
  **MATLAB Script**: `prepare_data.m`
 
-### **2.Initial Data Visualization**
+### **2.Data Visualization**
 I have performed exploratory data analysis (EDA) to understand feature distributions and activity-wise feature separation. The following visualizations were used:
 - **Feature distribution plots** to identify outliers.
 - **Class distribution bar charts** to ensure balanced classes.
