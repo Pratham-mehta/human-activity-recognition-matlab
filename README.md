@@ -36,9 +36,15 @@ Human activity recognition (HAR) has applications in **healthcare monitoring, fi
 - The dataset is loaded from `dataset/Train/` and `dataset/Test/`.
 - Features are normalized to a range between **0 and 1**.
 
+ **MATLAB Script**: `prepare_data.m`
+
 ### **2.Initial Data Visualization**
-- Exploratory Data Analysis (EDA) was conducted to understand feature distributions.
-- Data was visualized to analyze activity-wise feature separation.
+I have performed exploratory data analysis (EDA) to understand feature distributions and activity-wise feature separation. The following visualizations were used:
+- **Feature distribution plots** to identify outliers.
+- **Class distribution bar charts** to ensure balanced classes.
+- **Correlation heatmaps** to check feature redundancy.
+
+**MATLAB Script**: `visualize_data.m`
 
 ---
 
